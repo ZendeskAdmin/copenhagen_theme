@@ -1,14 +1,50 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
 <header class="header">
-  <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
-    {{/link}}
-  </div>
+  <!-- <div class="logo"> -->
+    <!-- {{#link 'help_center'}} -->
+      <!-- <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" /> -->
+      <!-- {{#if settings.show_brand_name}} -->
+        <!-- <span aria-hidden="true">{{help_center.name}}</span> -->
+      <!-- {{/if}} -->
+    <!-- {{/link}} -->
+  <!-- </div> -->
+	<div class="container" >
+	  <section>
+		<section class="categories blocks">
+		  <ul class="blocks-list">
+			<li style="height: 71px; padding-left: 0px;">
+			  <div class="logo-unselected">
+				<a href="https://support.meridiancloud.net/hc/en-us" class="blocks-item-link" style="padding: 17px 30px">
+				  <img class="logo-nav" src="{{asset 'meridian-powerweb-logo-888.png'}}"/>
+				</a>
+			  </div>
+			</li>
+					<li style="height: 71px; padding-left: 0px;">
+			  <div class="logo-unselected">
+				<a href="https://support.meridian360.com/hc/en-us" class="blocks-item-link" style="padding: 17px 30px">
+				  <img class="logo-nav" src="{{asset 'meridian-portal-logo-888.png'}}"/>
+				</a>
+			  </div>
+			</li>
+			<li style="height: 71px; padding-left: 0px;">
+			  <div class="logo-unselected">
+				<a href="https://support.meridianexplorer.info/hc/en-us" class="blocks-item-link" style="padding: 17px 30px">
+				  <img class="logo-nav" src="{{asset 'meridian-explorer-logo-888.png'}}" />
+				</a>
+			  </div>
+			</li>
+					<li style="height: 71px; padding-left: 0px;">
+			  <div class="logo-selected">
+				<a href="https://meridiananalytics.zendesk.com/hc/en-us" class="blocks-item-link" style="padding: 17px 30px">
+				  <img class="logo-nav" src="{{asset 'meridian-analytics-logo.png'}}"/>
+				</a>
+			  </div>
+			</li>
+		  </ul>
+		</section>
+	  </section>
+	</div>
   <div class="nav-wrapper">
     <button class="menu-button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-menu">

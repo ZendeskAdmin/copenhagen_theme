@@ -43,6 +43,11 @@
     </aside>
 
     <article id="main-content" class="article">
+	<! -- 03/25/21 Ken Billing - Added next div to open articles in a new tab -->
+	  <div style="text-align: right">
+        <a data-garden-id="buttons.anchor" data-garden-version="7.1.2" class="Anchor__StyledAnchor-sc-2qkkvq-0 index__c-btn___3y2Qe index__c-btn--anchor___ZpkO7 sZzkj" tabindex="0" data-garden-container-id="containers.keyboardfocus" data-garden-container-version="0.3.1" href="#" target="_blank" rel="noreferrer noopener" data-test-id="preview">Open in new tab <svg width="12" height="12" viewBox="0 0 12 12" focusable="false" class="Anchor__StyledNewWindowIcon-sc-2qkkvq-1 jcWpUG"><path fill="none" stroke="currentColor" stroke-linecap="round" d="M10.5 8.5V10c0 .3-.2.5-.5.5H2c-.3 0-.5-.2-.5-.5V2c0-.3.2-.5.5-.5h1.5M6 6l4-4m-3.5-.5H10c.3 0 .5.2.5.5v3.5"></path></svg>
+        </a>
+      </div>
       <header class="article-header">
         <h1 title="{{article.title}}" class="article-title">
           {{article.title}}
@@ -53,7 +58,6 @@
             </svg>
           {{/if}}
         </h1>
-
         <div class="article-author">
           {{#if settings.show_article_author}}
             <div class="avatar article-avatar">

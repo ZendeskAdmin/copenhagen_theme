@@ -1454,7 +1454,8 @@ ul {
 
 .article-list-item {
   font-size: 16px;
-  padding: 15px 0;
+  /* 03/26/21 Ken Billing - Removed top and bottom padding to shorten the list */
+  padding: 0 0;
 }
 
 .article-list-item a {
@@ -1798,7 +1799,8 @@ ul {
 
 .recent-articles li,
 .related-articles li {
-  margin-bottom: 15px;
+  /* 03/26/21 Ken Billing - Removed bottom margin to shorten the list */
+  margin-bottom: 0px;
 }
 
 /***** Attachments *****/
@@ -1873,7 +1875,8 @@ ul {
 
 .comment-heading, .recent-articles-title,
 .related-articles-title {
-  margin-bottom: 5px;
+  /* 03/26/21 Ken Billing - Increased bottom margin for white space before shortened article lists */
+  margin-bottom: 15px;
   margin-top: 0;
   font-size: 18px;
   font-weight: 600;
@@ -4719,4 +4722,32 @@ html[dir="rtl"] .notification-left-aligned {
 
 .dropdown-chevron-icon {
   vertical-align: middle;
+}
+
+/* Accruent custom styles for header navigation */
+div.logo-selected {
+  height: 71px;
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #213449;
+}
+
+div.logo-selected:hover {
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #213449;
+}
+
+div.logo-unselected {
+  height: 71px;
+}
+
+div.logo-unselected:hover {
+  border-style: solid;
+  border-width: 0px 0px 5px 0px;
+  border-color: #213449;
+}
+
+img.logo-nav {
+  height: 37px;
 }
